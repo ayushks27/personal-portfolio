@@ -1,0 +1,5 @@
+import React from 'react';
+
+export const ThemeSelector: React.FC = () => {
+  return null;
+};

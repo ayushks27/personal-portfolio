@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+
+  :root,
+  .theme-dark {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --primary-color: #ffffff;
+    --secondary-color: #a1a1aa;
+    --accent-color: #ffffff;
+    --border-color: #27272a;
+    --card-bg: rgba(9, 9, 11, 0.5);
+    --glow-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .theme-light {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #000000;
+    --secondary-color: #71717a;
+    --accent-color: #000000;
+    --border-color: #e4e4e7;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --glow-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Outfit', 'Inter', 'system-ui', sans-serif;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s ease,
+    border-color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Hide global scrollbar but allow scrolling */
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glass-hover:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px var(--glow-color);
+  transform: translateY(-2px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Sound Wave animation */
+@keyframes soundwave {
+
+  0%,
+  100% {
+    height: 4px;
+  }
+
+  50% {
+    height: 16px;
+  }
+}
+
+.soundwave-bar {
+  animation: soundwave 1.2s ease-in-out infinite;
+}
+
+.soundwave-bar:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.soundwave-bar:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.soundwave-bar:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+/* Custom Text Gradient */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary-color) 30%, var(--secondary-color) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 0.15em;
+}
+
+/* Hide default cursor if custom is enabled */
+.custom-cursor-enabled,
+.custom-cursor-enabled * {
+  cursor: none !important;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
