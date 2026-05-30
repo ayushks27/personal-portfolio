@@ -61,12 +61,12 @@ export const Projects: React.FC = () => {
     },
     {
       id: 'p5',
-      title: 'VERSE',
-      description: 'Engineered a modern multimedia platform using vanilla JavaScript, featuring advanced DOM manipulation, synchronized media playback, responsive UI interactions, and seamless animations without relying on frontend frameworks.',
+      title: 'THE HIDDEN HUE',
+      description: 'Built an immersive digital art gallery using Next.js, TypeScript, Tailwind CSS, and GSAP, featuring smooth animations, responsive layouts, modern UI interactions, and AI-inspired visual storytelling to create a surreal and engaging user experience.',
       category: 'Frontend',
-      tags: ['JavaScript', 'HTML', 'CSS', 'DOM Manipulation'],
-      github: 'https://github.com/ayushks27/verse_musica',
-      live: 'https://versemusica.netlify.app/',
+      tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GSAP'],
+      github: 'https://github.com/ayushks27/The-Hidden-Hue',
+      live: 'https://the-hidden-hue.vercel.app/',
       aestheticColor: 'rgba(255, 255, 255, 0.2)'
     },
     {
