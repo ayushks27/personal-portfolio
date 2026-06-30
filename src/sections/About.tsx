@@ -136,7 +136,7 @@ export const About: React.FC = () => {
                 Architecting reliable pipelines & scalable analytics.
               </h3>
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-2xl select-text">
-                I am Purnendu Raghav Srivastava, an aspiring Software and Data Engineer passionate about building scalable, reliable, and data-driven systems. With a strong foundation in Python, SQL, database design, and software development principles, I develop robust backend applications, efficient data pipelines, and scalable analytics solutions. I enjoy designing resilient ingestion workflows, architecting stateful backend systems, and transforming complex data into actionable insights that drive informed business decisions.
+                I am Purnendu Raghav Srivastava, a Software and Data Engineer passionate about building scalable applications, robust data pipelines, and data-driven solutions. I enjoy developing reliable backend systems and transforming data into actionable insights.
               </p>
             </div>
 
