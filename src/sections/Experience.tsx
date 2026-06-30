@@ -38,7 +38,7 @@ export const Experience: React.FC = () => {
     {
       role: 'Creative Head & Team Volunteer',
       company: 'Parola – The Literary Hub',
-      period: 'July 2024 - July 2026',
+      period: 'July 2024 - June 2026',
       bullets: [
         'Led and mentored the creative design team, executing large-scale flagship events including Model United Nations (MUN) at The JOUST.',
         'Collaborated with cross-functional hub teams to deliver impactful art assets and cohesive event designs for major literary gatherings.'
