@@ -7,7 +7,7 @@ interface Project {
   id: string;
   title: string;
   description: string;
-  category: 'Data Engineering' | 'Backend' | 'AI' | 'Data Analytics' | 'Frontend';
+  category: 'Data Engineering' | 'Backend' | 'AI/ML' | 'Data Analytics' | 'Frontend';
   tags: string[];
   github: string;
   live: string;
@@ -16,11 +16,41 @@ interface Project {
 
 export const Projects: React.FC = () => {
   const { favorites, toggleFavorite } = useAuthStore();
-  const [filter, setFilter] = useState<'All' | 'Data Engineering' | 'Backend' | 'AI' | 'Data Analytics'>('All');
+  const [filter, setFilter] = useState<'All' | 'Data Engineering' | 'Backend' | 'AI/ML' | 'Data Analytics'>('All');
 
   const projects: Project[] = [
     {
       id: 'p1',
+      title: 'Orqix',
+      description: 'AI-native distributed ML experiment orchestration platform featuring experiment tracking, workflow scheduling, lineage management, model registry, intelligent resource allocation, and AI-powered failure diagnostics.',
+      category: 'AI/ML',
+      tags: ['Python', 'Nextjs', 'FastAPI', 'Kafka', 'Docker', 'Redis'],
+      github: 'https://github.com/ayushks27/orqix',
+      live: 'https://orqix.vercel.app/',
+      aestheticColor: 'rgba(255, 255, 255, 0.2)'
+    },
+    {
+      id: 'p2',
+      title: 'Chroniq',
+      description: 'Chroniq transforms historical energy consumption data into actionable grid intelligence through machine learning-powered forecasting, uncertainty quantification, peak stress event detection, and interactive analytics for modern power systems.',
+      category: 'Data Engineering',
+      tags: ['Python', 'ARIMA', 'LSTM', 'HTML', 'XGBoost'],
+      github: 'https://github.com/ayushks27/chroniq',
+      live: 'https://ayushks27.github.io/chroniq/',
+      aestheticColor: 'rgba(255, 255, 255, 0.2)'
+    },
+    {
+      id: 'p3',
+      title: 'Reverie',
+      description: 'Reverie is a private, offline-first digital memory platform that transforms memories, letters, milestones, and future goals into a cinematic experience through interactive timelines, vision boards, future-dated content, and personalized storytelling, powered entirely by browser-based storage and authentication.',
+      category: 'Data Engineering',
+      tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Framer Motion'],
+      github: 'https://github.com/ayushks27/reverie',
+      live: 'https://reverie227.netlify.app/',
+      aestheticColor: 'rgba(255, 255, 255, 0.2)'
+    },
+    {
+      id: 'p4',
       title: 'Ingestra',
       description: 'Designed and implemented an end-to-end data ingestion and analytics pipeline, handling raw CSV ingestion, schema normalization, relational storage, and downstream analytical querying using SQLite.',
       category: 'Data Engineering',
@@ -30,17 +60,17 @@ export const Projects: React.FC = () => {
       aestheticColor: 'rgba(255, 255, 255, 0.2)'
     },
     {
-      id: 'p2',
+      id: 'p5',
       title: 'AutoStream',
       description: 'Developed a stateful GenAI-powered conversational agent that classifies user intent, retrieves product knowledge via RAG, and manages multi-turn lead qualification with safe backend tool execution.',
-      category: 'AI',
+      category: 'AI/ML',
       tags: ['Python', 'GenAI', 'RAG', 'Agentic Workflow'],
       github: 'https://github.com/ayushks27/social-to-lead-agentic-workflow',
       live: 'https://github.com/ayushks27/social-to-lead-agentic-workflow',
       aestheticColor: 'rgba(255, 255, 255, 0.2)'
     },
     {
-      id: 'p3',
+      id: 'p6',
       title: 'Uber Ride Cancellation Analysis',
       description: 'Built predictive models using Logistic Regression, Random Forest, and XGBoost on highly imbalanced operational data, achieving an ROC-AUC of 0.864 and 93.7% recall for cancellation prediction.',
       category: 'Data Analytics',
@@ -50,7 +80,7 @@ export const Projects: React.FC = () => {
       aestheticColor: 'rgba(255, 255, 255, 0.2)'
     },
     {
-      id: 'p4',
+      id: 'p7',
       title: 'DRRAS',
       description: 'Developed a disaster rescue management system using C++ and advanced data structures, enabling efficient route optimization, resource management, and real-time emergency response in dynamically changing environments.',
       category: 'Backend',
@@ -60,20 +90,10 @@ export const Projects: React.FC = () => {
       aestheticColor: 'rgba(255, 255, 255, 0.2)'
     },
     {
-      id: 'p5',
-      title: 'THE HIDDEN HUE',
-      description: 'Built an immersive digital art gallery using Next.js, TypeScript, Tailwind CSS, and GSAP, featuring smooth animations, responsive layouts, modern UI interactions, and AI-inspired visual storytelling to create a surreal and engaging user experience.',
-      category: 'Frontend',
-      tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GSAP'],
-      github: 'https://github.com/ayushks27/The-Hidden-Hue',
-      live: 'https://the-hidden-hue.vercel.app/',
-      aestheticColor: 'rgba(255, 255, 255, 0.2)'
-    },
-    {
-      id: 'p6',
+      id: 'p8',
       title: 'Minor Project: Topic Modeling',
       description: 'Built an end-to-end topic modeling pipeline comparing LDA and BERTopic using coherence and diversity metrics for temporal research analysis.',
-      category: 'AI',
+      category: 'AI/ML',
       tags: ['Python', 'LDA', 'BERTopic', 'Topic Modeling'],
       github: 'https://github.com/ayushks27',
       live: 'https://github.com/ayushks27',
@@ -85,8 +105,8 @@ export const Projects: React.FC = () => {
     ? projects
     : projects.filter(p => p.category === filter);
 
-  const categories: ('All' | 'Data Engineering' | 'Backend' | 'AI' | 'Data Analytics')[] = [
-    'All', 'Data Engineering', 'Backend', 'AI', 'Data Analytics'
+  const categories: ('All' | 'Data Engineering' | 'Backend' | 'AI/ML' | 'Data Analytics')[] = [
+    'All', 'Data Engineering', 'Backend', 'AI/ML', 'Data Analytics'
   ];
 
   return (

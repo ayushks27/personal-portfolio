@@ -64,14 +64,14 @@ export const About: React.FC = () => {
       category: 'experience'
     },
     {
-      year: 'Jul 2025 - Jul 2026',
+      year: 'Jul 2025 - Jun 2026',
       title: 'Creative Head',
       company: 'Parola – The Literary Hub',
       description: 'Led and mentored the creative design team, executing major flagship campus events including Model United Nations (MUN) at The JOUST.',
       category: 'achievement'
     },
     {
-      year: 'Apr 2025',
+      year: 'Apr 2026',
       title: 'Google Data Analytics Professional Certificate',
       company: 'Skillshop / Google',
       description: 'Mastered direct GA4 configuration, data tracking vectors, performance reporting pipelines, and actionable business insights.',

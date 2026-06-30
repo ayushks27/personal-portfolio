@@ -33,6 +33,15 @@ export const Skills: React.FC = () => {
       ]
     },
     {
+      title: 'AI & ML',
+      icon: <Database className="w-5 h-5 text-black dark:text-white" />,
+      skills: [
+        { name: 'Generative AI' },
+        { name: 'Agentic AI' },
+        { name: 'Deep Learning' }
+      ]
+    },
+    {
       title: 'Databases & Storage',
       icon: <Database className="w-5 h-5 text-black dark:text-white" />,
       skills: [
@@ -59,7 +68,7 @@ export const Skills: React.FC = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000005_1px,transparent_1px),linear-gradient(to_bottom,#00000005_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none animate-pulse" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        
+
         {/* Header */}
         <div className="mb-20 text-center md:text-left select-none">
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter mt-8 text-black dark:text-white uppercase leading-none">

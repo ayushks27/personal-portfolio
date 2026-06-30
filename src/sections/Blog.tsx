@@ -90,6 +90,109 @@ This provides a premium, highly tactile dashboard experience that responds seaml
     },
     {
       id: 'b3',
+      title: 'Attention Beyond Scale: Insights from Modern Transformer Research',
+      excerpt: 'A research-oriented exploration of sparse attention, long-context architectures, and emerging transformer optimization techniques.',
+      date: '2026-05-12',
+      category: 'AI & ML',
+      tags: ['Transformers', 'Deep Learning', 'Research Papers'],
+      content: `
+  # Attention Beyond Scale: Modern Transformer Research
+
+  Transformer architectures continue to dominate natural language processing, computer vision, and multimodal intelligence. Recent research focuses on improving efficiency, context length, and reasoning capabilities.
+
+  ## Sparse and Efficient Attention
+
+  Traditional self-attention scales quadratically with sequence length. Contemporary research introduces sparse attention mechanisms that significantly reduce computational overhead.
+
+  \`\`\`python
+  class SparseAttention(nn.Module):
+      def forward(self, query, key, value):
+          scores = torch.matmul(query, key.transpose(-2, -1))
+          topk_scores, indices = torch.topk(scores, k=64)
+          return torch.softmax(topk_scores, dim=-1)
+  \`\`\`
+
+  ## Long Context Windows
+
+  Research papers such as Longformer, FlashAttention, and Ring Attention demonstrate techniques for processing contexts exceeding hundreds of thousands of tokens.
+
+  ## Multimodal Transformers
+
+  Modern transformer systems increasingly integrate text, image, audio, and video embeddings into unified architectures, enabling richer reasoning and cross-modal understanding.
+
+  These innovations continue pushing transformer models toward more efficient, scalable, and general-purpose intelligence systems.
+  `
+    },
+
+    {
+      id: 'b4',
+      title: 'Orchestrating ML at Scale with Seven Microservices',
+      excerpt: 'A systems research perspective on designing production-grade machine learning orchestration using distributed microservices.',
+      date: '2026-05-18',
+      category: 'AI & ML',
+      tags: ['MLOps', 'Microservices', 'Distributed Systems'],
+      content: `
+  # ML Orchestration with Seven Microservices
+
+  Research in MLOps emphasizes modular architectures for scalable and reproducible machine learning pipelines. A common production pattern divides responsibilities across dedicated microservices.
+
+  ## The Seven-Service Architecture
+
+  1. Data Ingestion Service
+  2. Feature Engineering Service
+  3. Training Service
+  4. Experiment Tracking Service
+  5. Model Registry Service
+  6. Deployment Service
+  7. Monitoring Service
+
+  ## Microservice Topology
+
+  \`\`\`yaml
+  services:
+    ingestion-service:
+      image: ml/ingestion
+
+    feature-service:
+      image: ml/features
+
+    training-service:
+      image: ml/training
+
+    experiment-service:
+      image: ml/experiments
+
+    registry-service:
+      image: ml/registry
+
+    deployment-service:
+      image: ml/deployment
+
+    monitoring-service:
+      image: ml/monitoring
+  \`\`\`
+
+  ## Workflow Orchestration
+
+  Modern orchestration frameworks coordinate dependencies, retries, and scheduling across distributed environments.
+
+  \`\`\`python
+  pipeline = [
+    "ingestion",
+    "feature_engineering",
+    "training",
+    "experiment_tracking",
+    "model_registry",
+    "deployment",
+    "monitoring"
+  ]
+  \`\`\`
+
+  Separating ML responsibilities into independent services improves scalability, observability, fault isolation, and continuous delivery across enterprise AI platforms.
+  `
+    },
+    {
+      id: 'b5',
       title: 'Real-Time Data Pipelines with Python and Apache Kafka',
       excerpt: 'A practical walkthrough of designing fault-tolerant, high-throughput streaming pipelines using Kafka producers, consumers, and Python connectors.',
       date: '2026-05-08',
@@ -133,7 +236,7 @@ Building streaming infrastructure with Python + Kafka gives data engineers the p
 `
     },
     {
-      id: 'b4',
+      id: 'b6',
       title: 'Designing Monochromatic UI Systems That Scale',
       excerpt: 'Why constraint-driven black and white design systems produce more consistent, accessible, and visually striking interfaces than color-heavy alternatives.',
       date: '2026-04-15',
