@@ -14,6 +14,17 @@ interface Position {
 export const Experience: React.FC = () => {
   const positions: Position[] = [
     {
+      role: 'Software Intern',
+      company: 'CodeAlpha',
+      period: 'March 2025 - April 2025',
+      bullets: [
+        'Developed a console-based banking system with account creation, deposits, withdrawals, and balance management using object-oriented programming (OOP) and modular design, reducing transaction errors by 20%.',
+        'Collaborated with senior advisors in an Agile environment to develop a user authentication system with account provisioning, secure login, email verification, cutting errors by 15% and raising success rate to 95%.'
+      ],
+      skills: ['C++', 'Software Development', 'Agile Methodology'],
+      metrics: []
+    },
+    {
       role: 'Data Science Intern',
       company: 'Corizo',
       period: 'February 2024 - April 2024',
