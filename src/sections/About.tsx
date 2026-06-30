@@ -57,6 +57,13 @@ export const About: React.FC = () => {
       category: 'experience'
     },
     {
+      year: 'Mar 2025 - Apr 2025',
+      title: 'Software Intern',
+      company: 'CodeAlpha',
+      description: 'Built a console-based banking system with secure authentication and transaction management using OOP and Agile practices, reducing errors by 20% and achieving 95% login success.',
+      category: 'experience'
+    },
+    {
       year: 'Feb 2024 - Apr 2024',
       title: 'Data Science Intern',
       company: 'Corizo',
