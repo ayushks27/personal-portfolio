@@ -76,13 +76,6 @@ export const About: React.FC = () => {
       company: 'Parola – The Literary Hub',
       description: 'Led and mentored the creative design team, executing major flagship campus events including Model United Nations (MUN) at The JOUST.',
       category: 'achievement'
-    },
-    {
-      year: 'Apr 2026',
-      title: 'Google Data Analytics Professional Certificate',
-      company: 'Skillshop / Google',
-      description: 'Mastered direct GA4 configuration, data tracking vectors, performance reporting pipelines, and actionable business insights.',
-      category: 'achievement'
     }
   ];
 
@@ -143,7 +136,7 @@ export const About: React.FC = () => {
                 Architecting reliable pipelines & scalable analytics.
               </h3>
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-2xl select-text">
-                I am Purnendu Raghav Srivastava, an aspiring Data Engineer focused on designing reliable data pipelines and scalable analytics systems to enable data-driven business decisions. With a strong foundation in Python, SQL, and database normalization, I build robust ingestion workflows and stateful backend architectures.
+                I am Purnendu Raghav Srivastava, an aspiring Software and Data Engineer passionate about building scalable, reliable, and data-driven systems. With a strong foundation in Python, SQL, database design, and software development principles, I develop robust backend applications, efficient data pipelines, and scalable analytics solutions. I enjoy designing resilient ingestion workflows, architecting stateful backend systems, and transforming complex data into actionable insights that drive informed business decisions.
               </p>
             </div>
 
