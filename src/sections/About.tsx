@@ -71,6 +71,13 @@ export const About: React.FC = () => {
       category: 'experience'
     },
     {
+      year: 'Jul 2024 - Jun 2025',
+      title: 'Creative Volunteer',
+      company: 'Parola – The Literary Hub',
+      description: 'Collaborated with cross-functional teams to deliver impactful artwork for major literary events.',
+      category: 'experience'
+    },
+    {
       year: 'Feb 2024 - Apr 2024',
       title: 'Data Science Intern',
       company: 'Corizo',
@@ -132,9 +139,6 @@ export const About: React.FC = () => {
             className="lg:col-span-7 space-y-8"
           >
             <div className="space-y-4">
-              <h3 className="text-xl md:text-2xl font-bold tracking-tight">
-                Architecting reliable pipelines & scalable analytics.
-              </h3>
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-2xl select-text">
                 I am Purnendu Raghav Srivastava, a Software and Data Engineer passionate about building scalable applications, robust data pipelines, and data-driven solutions. I enjoy developing reliable backend systems and transforming data into actionable insights.
               </p>
