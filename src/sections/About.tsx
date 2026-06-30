@@ -57,6 +57,13 @@ export const About: React.FC = () => {
       category: 'experience'
     },
     {
+      year: 'Jul 2025 - Jun 2026',
+      title: 'Creative Head',
+      company: 'Parola – The Literary Hub',
+      description: 'Led and mentored the creative design team, executing major flagship campus events including Model United Nations (MUN) at The JOUST.',
+      category: 'achievement'
+    },
+    {
       year: 'Mar 2025 - Apr 2025',
       title: 'Software Intern',
       company: 'CodeAlpha',
@@ -69,13 +76,6 @@ export const About: React.FC = () => {
       company: 'Corizo',
       description: 'Developed stock prediction models using KNN and completed Cinelytics analysis of high-volume movie datasets to extract revenue and popularity insights.',
       category: 'experience'
-    },
-    {
-      year: 'Jul 2025 - Jun 2026',
-      title: 'Creative Head',
-      company: 'Parola – The Literary Hub',
-      description: 'Led and mentored the creative design team, executing major flagship campus events including Model United Nations (MUN) at The JOUST.',
-      category: 'achievement'
     }
   ];
 
