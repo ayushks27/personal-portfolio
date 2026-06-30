@@ -50,8 +50,8 @@ export const About: React.FC = () => {
       category: 'education'
     },
     {
-      year: 'Jul 2026',
-      title: 'Software Engineering Intern',
+      year: 'Jul 2026 - Jun 2027',
+      title: 'SDE Intern',
       company: 'STMicroelectronics (T&RD Department)',
       description: 'Internship in the Technology & Research and Development department at STMicroelectronics, contributing to cutting-edge engineering solutions.',
       category: 'experience'
