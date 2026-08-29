@@ -7,7 +7,7 @@ interface Project {
   id: string;
   title: string;
   description: string;
-  category: 'Data Engineering' | 'Backend' | 'AI/ML' | 'Data Analytics' | 'Frontend';
+  category: 'Data Engineering' | 'Backend' | 'AI/ML' | 'Data Analytics' | 'Frontend' | 'Full Stack';
   tags: string[];
   github: string;
   live: string;
@@ -43,7 +43,7 @@ export const Projects: React.FC = () => {
       id: 'p3',
       title: 'Reverie',
       description: 'Reverie is a private, offline-first digital memory platform that transforms memories, letters, milestones, and future goals into a cinematic experience through interactive timelines, vision boards, future-dated content, and personalized storytelling, powered entirely by browser-based storage and authentication.',
-      category: 'Data Engineering',
+      category: 'Full Stack',
       tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Framer Motion'],
       github: 'https://github.com/ayushks27/reverie',
       live: 'https://reverie227.netlify.app/',
