@@ -4,7 +4,7 @@ import { CanvasContainer } from '../components/3d/CanvasContainer';
 import { NeuralNetwork } from '../components/3d/NeuralNetwork';
 import { ArrowDown } from 'lucide-react';
 
-const ROLES = ['Software Developer'];
+const ROLES = ['Software Engineer'];
 
 export const Hero: React.FC = () => {
   const [typewriterText, setTypewriterText] = useState('');
