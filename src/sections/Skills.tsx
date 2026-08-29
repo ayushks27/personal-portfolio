@@ -72,7 +72,7 @@ export const Skills: React.FC = () => {
       ]
     },
     {
-      title: 'Cloud / Tools',
+      title: 'Cloud/Tools',
       icon: <Brain className="w-5 h-5 text-black dark:text-white" />,
       skills: [
         { name: 'AWS' },
