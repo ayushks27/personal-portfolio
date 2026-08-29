@@ -105,8 +105,8 @@ export const Projects: React.FC = () => {
     ? projects
     : projects.filter(p => p.category === filter);
 
-  const categories: ('All' | 'Data Engineering' | 'Backend' | 'AI/ML' | 'Data Analytics')[] = [
-    'All', 'Data Engineering', 'Backend', 'AI/ML', 'Data Analytics'
+  const categories: ('All' | 'Data Engineering' | 'Backend' | 'AI/ML' | 'Data Analytics' | 'Full Stack')[] = [
+    'All', 'Data Engineering', 'Backend', 'AI/ML', 'Data Analytics', 'Full Stack'
   ];
 
   return (
