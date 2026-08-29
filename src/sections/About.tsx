@@ -140,7 +140,7 @@ export const About: React.FC = () => {
           >
             <div className="space-y-4">
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-2xl select-text">
-                I am Purnendu Raghav Srivastava, a Software and Data Engineer passionate about building scalable applications, robust data pipelines, and data-driven solutions. I enjoy developing reliable backend systems and transforming data into actionable insights.
+                I am Purnendu Raghav Srivastava, a Software and Data Engineer focused on building scalable applications, reliable data pipelines, and intelligent, data-driven solutions. I enjoy designing robust backend systems, working with modern data and AI technologies, and transforming complex data into meaningful insights.
               </p>
             </div>
 
