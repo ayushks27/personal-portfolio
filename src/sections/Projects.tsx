@@ -16,7 +16,7 @@ interface Project {
 
 export const Projects: React.FC = () => {
   const { favorites, toggleFavorite } = useAuthStore();
-  const [filter, setFilter] = useState<'All' | 'Data Engineering' | 'Backend' | 'AI/ML' | 'Data Analytics'>('All');
+  const [filter, setFilter] = useState<'All' | 'Data Engineering' | 'Backend' | 'AI/ML' | 'Data Analytics' | 'Full Stack'>('All');
 
   const projects: Project[] = [
     {
