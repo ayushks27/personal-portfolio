@@ -15,12 +15,13 @@ interface SkillCategory {
 export const Skills: React.FC = () => {
   const categories: SkillCategory[] = [
     {
-      title: 'Programming & Query',
+      title: 'Languages',
       icon: <Layout className="w-5 h-5 text-black dark:text-white" />,
       skills: [
         { name: 'Python' },
         { name: 'C++' },
-        { name: 'SQL' }
+        { name: 'SQL' },
+        { name: 'JavaScript' }
       ]
     },
     {
@@ -28,36 +29,58 @@ export const Skills: React.FC = () => {
       icon: <Server className="w-5 h-5 text-black dark:text-white" />,
       skills: [
         { name: 'Data Ingestion Pipelines' },
-        { name: 'Large-scale Databases' },
+        { name: 'ETL/ELT' },
+        { name: 'Kafka' },
+        { name: 'Apache Spark' },
         { name: 'Big Data Processing' }
       ]
     },
     {
-      title: 'AI & ML',
+      title: 'AI/ML',
       icon: <Database className="w-5 h-5 text-black dark:text-white" />,
       skills: [
+        { name: 'LLMs' },
+        { name: 'RAG' },
+        { name: 'Hugging Face Transformers' },
+        { name: 'PyTorch' },
+        { name: 'TensorFlow' },
+        { name: 'Scikit-learn' },
         { name: 'Generative AI' },
         { name: 'Agentic AI' },
         { name: 'Deep Learning' }
       ]
     },
     {
-      title: 'Databases & Storage',
+      title: 'Backend & APIs',
+      icon: <Database className="w-5 h-5 text-black dark:text-white" />,
+      skills: [
+        { name: 'FastAPI' },
+        { name: 'Flask' },
+        { name: 'REST APIs' },
+        { name: 'API Integration' }
+      ]
+    },
+    {
+      title: 'Databases',
       icon: <Database className="w-5 h-5 text-black dark:text-white" />,
       skills: [
         { name: 'MySQL' },
         { name: 'MongoDB' },
+        { name: 'PostgreSQL' },
+        { name: 'Redis' },
         { name: 'SQLite' }
       ]
     },
     {
-      title: 'Cloud & Tech Tools',
+      title: 'Cloud / Tools',
       icon: <Brain className="w-5 h-5 text-black dark:text-white" />,
       skills: [
-        { name: 'AWS Cloud' },
-        { name: 'Git & GitHub' },
-        { name: 'Power BI Analytics' },
-        { name: 'Streamlit UIs' }
+        { name: 'AWS' },
+        { name: 'Databricks' },
+        { name: 'Git' },
+        { name: 'Linux' },
+        { name: 'Power BI' },
+        { name: 'Streamlit' }
       ]
     }
   ];
