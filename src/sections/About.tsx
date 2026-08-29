@@ -51,9 +51,9 @@ export const About: React.FC = () => {
     },
     {
       year: 'Jul 2026 - Jun 2027',
-      title: 'SDE Intern',
-      company: 'STMicroelectronics (T&RD Department)',
-      description: 'Internship in the Technology & Research and Development department at STMicroelectronics, contributing to cutting-edge engineering solutions.',
+      title: 'Software Engineer Intern',
+      company: 'STMicroelectronics',
+      description: 'Working with RET team for mask validations and correction applying OPC method as well as working on OFDEC tool.',
       category: 'experience'
     },
     {
